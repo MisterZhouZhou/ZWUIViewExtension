@@ -117,7 +117,7 @@
 }
 
 #pragma mark - equalToView
--(void(^)(UIView *view))centerxEqualToView{
+-(EqualToView)centerxEqualToView{
     @WeakObj(self);
     return ^(UIView *view){
         @StrongObj(self);
@@ -130,7 +130,7 @@
     };
 }
 
--(void(^)(UIView *view))centeryEqualToView{
+-(EqualToView)centeryEqualToView{
     @WeakObj(self);
     return ^(UIView *view){
         @StrongObj(self);
@@ -143,7 +143,7 @@
     };
 }
 
--(void(^)(UIView *view))centerEqualToView{
+-(EqualToView)centerEqualToView{
     @WeakObj(self);
     return ^(UIView *view){
         @StrongObj(self);
@@ -157,7 +157,7 @@
     };
 }
 
--(void(^)(UIView *view))leftEqualToView{
+-(EqualToView)leftEqualToView{
     @WeakObj(self);
     return ^(UIView *view){
         @StrongObj(self);
@@ -171,7 +171,7 @@
     };
 }
 
--(void(^)(UIView *view))rightEqualToView{
+-(EqualToView)rightEqualToView{
     @WeakObj(self);
     return ^(UIView *view){
         @StrongObj(self);
@@ -185,7 +185,7 @@
     };
 }
 
--(void(^)(UIView *view))topEqualToView{
+-(EqualToView)topEqualToView{
     @WeakObj(self);
     return ^(UIView *view){
         @StrongObj(self);
@@ -200,7 +200,7 @@
 }
 
 
--(void(^)(UIView *view))bottomEqualToView{
+-(EqualToView)bottomEqualToView{
     @WeakObj(self);
     return ^(UIView *view){
         @StrongObj(self);

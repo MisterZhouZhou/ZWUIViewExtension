@@ -12,6 +12,8 @@
  *  操作顺序，添加视图 再进行 布局
  */
 
+typedef void(^EqualToView)(UIView *view);
+
 @interface UIView (ZWExtension)
 
 /** size */
@@ -37,37 +39,37 @@
 /** centerX equal to View‘s centerX 
  *  centerxEqualToView(superview/view)
  */
--(void(^)(UIView *view))centerxEqualToView;
+-(EqualToView)centerxEqualToView;
 
 /** centerY equal to View‘s centerY
  *  centeryEqualToView(superview/view)
  */
--(void(^)(UIView *view))centeryEqualToView;
+-(EqualToView)centeryEqualToView;
 
 /** center equal to View‘s center
  *  centerEqualToView(superview/view)
  */
--(void(^)(UIView *view))centerEqualToView;
+-(EqualToView)centerEqualToView;
 
 /** left equal to View‘s left
  *  leftEqualToView(superview/view)
  */
--(void(^)(UIView *view))leftEqualToView;
+-(EqualToView)leftEqualToView;
 
 /** right equal to View‘s right
  *  rightEqualToView(superview/view)
  */
--(void(^)(UIView *view))rightEqualToView;
+-(EqualToView)rightEqualToView;
 
 /** top equal to View‘s top
  *  topEqualToView(superview/view)
  */
--(void(^)(UIView *view))topEqualToView;
+-(EqualToView)topEqualToView;
 
 /** bottom equal to View‘s bottom
  *  bottomEqualToView(superview/view)
  */
--(void(^)(UIView *view))bottomEqualToView;
+-(EqualToView)bottomEqualToView;
 
 /* 在分类中声明@property，只会生成方法的声明，不会生成方法的实现和带有下划线的成员变量*/
 @end
